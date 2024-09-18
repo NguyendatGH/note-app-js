@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background: rgb(255, 214, 129);
+  background: linear-gradient(
+    52deg,
+    rgba(255, 214, 129, 1) 0%,
+    rgba(143, 0, 255, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.composer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  min-width: 600px;
+}
+
+.composer h1 {
+  color: #8f00ff;
+}
+
+.composer #input-title {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 2px solid #8f00ff;
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.composer #input-desc {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 2px solid #8f00ff;
+  font-size: 16px;
+  margin-top: 12px;
+  font-family: sans-serif;
+}
+.composer #input-desc::placeholder {
+  font-family: sans-serif;
+}
+
+#submit-btn {
+  margin-top: 12px;
+  padding: 12px 48px;
+  color: #fff;
+  background-color: #8f00ff;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#submit-btn:hover {
+  background-color: #a835ff;
+}
+
+#tasks {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+  list-style: none;
+  gap: 20px;
+}
+.task {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  height: fit-content;
+}
+
+.task h3 {
+  padding: 20px 20px 8px;
+}
+
+.task p {
+  padding: 0 20px;
+}
+
+.task .btns {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.task .btns .delete-btn {
+  width: 50%;
+  border: none;
+  border-bottom-left-radius: 12px;
+  padding: 8px 0;
+  background-color: #d03436;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.task .btns .delete-btn:hover {
+  background-color: #d85154;
+}
+
+.task .btns .star-btn {
+  width: 50%;
+  border: none;
+  border-bottom-right-radius: 12px;
+  padding: 12px 0;
+  background-color: #ce950b;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.task .btns .star-btn:hover {
+  background-color: #cba448;
+}
