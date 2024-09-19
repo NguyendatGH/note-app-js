@@ -131,3 +131,18 @@ html {
 .task .btns .star-btn:hover {
   background-color: #cba448;
 }
+
+.highlighted_note{
+  background-color: #fff79b;
+}
+
+@media (max-width: 768px) {
+  .composer{
+    width: 70%;
+    height: auto;
+    min-width: 100px;
+  }
+  .task{
+ width: 220px;
+  }
+}
